@@ -1,0 +1,5 @@
+rootProject.name = 'RNKinDevPlatformSample'
+include ':react-native-kin-devplatform'
+project(':react-native-kin-devplatform').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-kin-devplatform/android')
+
+include ':app'
