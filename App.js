@@ -13,9 +13,9 @@ import { Environment, Kin } from 'react-native-kin-devplatform';
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-
+    Kin.enableLogs(true);
     console.log("Environment.playground() = " + JSON.stringify(Environment.playground()));
-    Kin.start("some jwt", Environment.playground());
+    Kin.start("some user id", "some jwt", Environment.playground());
 
     return (
       <View style={styles.container}>
